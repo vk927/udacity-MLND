@@ -11877,14 +11877,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Calculate number of students</span>
 <span class="n">n_students</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">student_data</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 
 <span class="c1"># TODO: Calculate number of features</span>
-<span class="n">n_features</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">student_data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">n_features</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">student_data</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 
 <span class="c1"># TODO: Calculate passing students</span>
 <span class="n">pass_series</span><span class="o">=</span><span class="n">student_data</span><span class="o">.</span><span class="n">passed</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="s1">&#39;yes&#39;</span><span class="p">)</span>
@@ -11916,7 +11916,7 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Total number of students: 395
-Number of features: 31
+Number of features: 30
 Number of students who passed: 265.0
 Number of students who failed: 130.0
 Graduation rate of the class: 67.09%
@@ -11942,7 +11942,7 @@ Graduation rate of the class: 67.09%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Extract feature columns</span>
@@ -12024,7 +12024,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">preprocess_features</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -12078,7 +12078,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">X_all</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -12092,7 +12092,7 @@ Feature values:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -12258,7 +12258,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
@@ -12273,7 +12273,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
@@ -13718,7 +13718,7 @@ AElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">split_process_lables</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -16625,7 +16625,7 @@ BBgIkqTS/we96VtAdXEPFAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -16675,7 +16675,7 @@ BBgIkqTS/we96VtAdXEPFAAAAABJRU5ErkJggg==
 
 
 <div class="output_text output_subarea ">
-<pre>&lt;matplotlib.figure.Figure at 0x1069a320&gt;</pre>
+<pre>&lt;matplotlib.figure.Figure at 0xdd44a58&gt;</pre>
 </div>
 
 </div>
@@ -19933,7 +19933,7 @@ xuCXpMIY/JJUGINfkgpj8EtSYQx+SSrM/wf2HR8Vl9gpngAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import any additional functionality you may need here</span>
@@ -20077,7 +20077,7 @@ Netflix uses ensemble learners to improve their systems, infact there was a $ 1 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">train_classifier</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
@@ -20117,6 +20117,7 @@ Netflix uses ensemble learners to improve their systems, infact there was a $ 1 
     <span class="c1"># Print the results of prediction for both training and testing</span>
     <span class="k">print</span> <span class="s2">&quot;F1 score for training set: {:.4f}.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">predict_labels</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">))</span>
     <span class="k">print</span> <span class="s2">&quot;F1 score for test set: {:.4f}.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">predict_labels</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
+    <span class="k">print</span> <span class="s2">&quot;*****************************************************&quot;</span>
 </pre></div>
 
 </div>
@@ -20150,7 +20151,7 @@ Netflix uses ensemble learners to improve their systems, infact there was a $ 1 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import the three supervised learning models from sklearn</span>
@@ -20199,7 +20200,10 @@ Netflix uses ensemble learners to improve their systems, infact there was a $ 1 
 <span class="c1">#print X_train_100</span>
 
 <span class="c1"># TODO: Execute the &#39;train_predict&#39; function for each classifier and each training set size</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_C</span><span class="p">,</span> <span class="n">X_train_100</span><span class="p">,</span> <span class="n">y_train_100</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="c1"># train_predict(clf_C, X_train_100, y_train_100, X_test, y_test)</span>
+<span class="k">for</span> <span class="n">clf</span> <span class="ow">in</span> <span class="p">[</span><span class="n">clf_A</span><span class="p">,</span> <span class="n">clf_B</span><span class="p">,</span> <span class="n">clf_C</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">size</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">]:</span>
+        <span class="n">train_predict</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">[:</span><span class="n">size</span><span class="p">],</span> <span class="n">y_train</span><span class="p">[:</span><span class="n">size</span><span class="p">],</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -20212,12 +20216,69 @@ Netflix uses ensemble learners to improve their systems, infact there was a $ 1 
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training a AdaBoostClassifier using a training set size of 100. . .
-Trained model in 0.1690 seconds
+<pre>Training a KNeighborsClassifier using a training set size of 100. . .
+Trained model in 0.0020 seconds
 Made predictions in 0.0040 seconds.
+F1 score for training set: 0.7972.
+Made predictions in 0.0030 seconds.
+F1 score for test set: 0.7068.
+*****************************************************
+Training a KNeighborsClassifier using a training set size of 200. . .
+Trained model in 0.0020 seconds
+Made predictions in 0.0090 seconds.
+F1 score for training set: 0.8571.
+Made predictions in 0.0040 seconds.
+F1 score for test set: 0.7121.
+*****************************************************
+Training a KNeighborsClassifier using a training set size of 300. . .
+Trained model in 0.0020 seconds
+Made predictions in 0.0140 seconds.
+F1 score for training set: 0.8722.
+Made predictions in 0.0070 seconds.
+F1 score for test set: 0.7482.
+*****************************************************
+Training a SVC using a training set size of 100. . .
+Trained model in 0.0030 seconds
+Made predictions in 0.0010 seconds.
+F1 score for training set: 0.8591.
+Made predictions in 0.0010 seconds.
+F1 score for test set: 0.7838.
+*****************************************************
+Training a SVC using a training set size of 200. . .
+Trained model in 0.0150 seconds
+Made predictions in 0.0040 seconds.
+F1 score for training set: 0.8693.
+Made predictions in 0.0010 seconds.
+F1 score for test set: 0.7755.
+*****************************************************
+Training a SVC using a training set size of 300. . .
+Trained model in 0.0150 seconds
+Made predictions in 0.0080 seconds.
+F1 score for training set: 0.8692.
+Made predictions in 0.0030 seconds.
+F1 score for test set: 0.7586.
+*****************************************************
+Training a AdaBoostClassifier using a training set size of 100. . .
+Trained model in 0.2390 seconds
+Made predictions in 0.0000 seconds.
 F1 score for training set: 0.9538.
-Made predictions in 0.0040 seconds.
+Made predictions in 0.0100 seconds.
 F1 score for test set: 0.7200.
+*****************************************************
+Training a AdaBoostClassifier using a training set size of 200. . .
+Trained model in 0.1610 seconds
+Made predictions in 0.0000 seconds.
+F1 score for training set: 0.8826.
+Made predictions in 0.0000 seconds.
+F1 score for test set: 0.8058.
+*****************************************************
+Training a AdaBoostClassifier using a training set size of 300. . .
+Trained model in 0.1520 seconds
+Made predictions in 0.0000 seconds.
+F1 score for training set: 0.8688.
+Made predictions in 0.0100 seconds.
+F1 score for test set: 0.7794.
+*****************************************************
 </pre>
 </div>
 </div>
@@ -20241,7 +20302,7 @@ F1 score for test set: 0.7200.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong> Classifer 1 - ?</strong></p>
+<p><strong> Classifer 1 - KNeighboursClassifier</strong></p>
 <table>
 <thead><tr>
 <th style="text-align:center">Training Set Size</th>
@@ -20254,28 +20315,28 @@ F1 score for test set: 0.7200.
 <tbody>
 <tr>
 <td style="text-align:center">100</td>
-<td style="text-align:center">0.0460 sec</td>
-<td style="text-align:center">0.0040 sec</td>
+<td style="text-align:center">0.0020 sec</td>
+<td style="text-align:center">0.0030 sec</td>
 <td style="text-align:center">0.7972</td>
 <td style="text-align:center">0.7068</td>
 </tr>
 <tr>
 <td style="text-align:center">200</td>
-<td style="text-align:center">0.0010 sec</td>
-<td style="text-align:center">0.0090 sec</td>
+<td style="text-align:center">0.0020 sec</td>
+<td style="text-align:center">0.0040 sec</td>
 <td style="text-align:center">0.8571</td>
 <td style="text-align:center">0.7121</td>
 </tr>
 <tr>
 <td style="text-align:center">300</td>
-<td style="text-align:center">0.0050 sec</td>
+<td style="text-align:center">0.0020 sec</td>
 <td style="text-align:center">0.0070 sec</td>
 <td style="text-align:center">0.8722</td>
 <td style="text-align:center">0.7482</td>
 </tr>
 </tbody>
 </table>
-<p><strong> Classifer 2 - ?</strong></p>
+<p><strong> Classifer 2 - Support Vector Machines</strong></p>
 <table>
 <thead><tr>
 <th style="text-align:center">Training Set Size</th>
@@ -20288,28 +20349,28 @@ F1 score for test set: 0.7200.
 <tbody>
 <tr>
 <td style="text-align:center">100</td>
-<td style="text-align:center">0.0050 sec</td>
+<td style="text-align:center">0.0030 sec</td>
 <td style="text-align:center">0.0010 sec</td>
 <td style="text-align:center">0.8591</td>
 <td style="text-align:center">0.7838</td>
 </tr>
 <tr>
 <td style="text-align:center">200</td>
-<td style="text-align:center">0.0080 sec</td>
-<td style="text-align:center">0.0040 sec</td>
+<td style="text-align:center">0.0150 sec</td>
+<td style="text-align:center">0.0010 sec</td>
 <td style="text-align:center">0.8693</td>
 <td style="text-align:center">0.7755</td>
 </tr>
 <tr>
 <td style="text-align:center">300</td>
 <td style="text-align:center">0.0150 sec</td>
-<td style="text-align:center">0.0020 sec</td>
-<td style="text-align:center">0.86</td>
+<td style="text-align:center">0.0030 sec</td>
+<td style="text-align:center">0.8692</td>
 <td style="text-align:center">0.7586</td>
 </tr>
 </tbody>
 </table>
-<p><strong> Classifer 3 - ?</strong></p>
+<p><strong> Classifer 3 - AdaBooster</strong></p>
 <table>
 <thead><tr>
 <th style="text-align:center">Training Set Size</th>
@@ -20322,22 +20383,22 @@ F1 score for test set: 0.7200.
 <tbody>
 <tr>
 <td style="text-align:center">100</td>
-<td style="text-align:center">0.1690 sec</td>
-<td style="text-align:center">0.0040 sec</td>
+<td style="text-align:center">0.2390 sec</td>
+<td style="text-align:center">0.0100 sec</td>
 <td style="text-align:center">0.9583</td>
 <td style="text-align:center">0.7200</td>
 </tr>
 <tr>
 <td style="text-align:center">200</td>
-<td style="text-align:center">0.2680 sec</td>
-<td style="text-align:center">0.0070 sec</td>
+<td style="text-align:center">0.1610 sec</td>
+<td style="text-align:center">0.0000 sec</td>
 <td style="text-align:center">0.8826</td>
 <td style="text-align:center">0.8058</td>
 </tr>
 <tr>
 <td style="text-align:center">300</td>
-<td style="text-align:center">0.2530 sec</td>
-<td style="text-align:center">0.0180 sec</td>
+<td style="text-align:center">0.1520 sec</td>
+<td style="text-align:center">0.0100 sec</td>
 <td style="text-align:center">0.8688</td>
 <td style="text-align:center">0.7794</td>
 </tr>
@@ -20372,7 +20433,12 @@ F1 score for test set: 0.7200.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> with the given data,limited resources,cost and perfomance it is better to use AdaBooster - Ensemble Classifier model in student intervention system.as I said earlier AdaBooster combines several models and give the final result and and these models are choosen with different sample tran data and after training one model we give errored data more weight in next bad(next model's train data) by doing so we will improve our perfomance when compared to other models but we need to make sure that no.of estimators/models must have some upper limit to reduce overfitting and even the prediction time is also less</p>
+<p><strong>Answer: </strong> with the given data,limited resources,cost and perfomance it is better to use AdaBooster - Ensemble Classifier model in student intervention system.I used AdaBooster with DecisionTree Classifier here in example, it has more F1 score  when compared to another models .
+although we get more score with SVM train 100 , when increased in size we get more score for AdaBooster
+Test prediction time is also less when comapred to other models .
+but training times is high when compared to others and we can negelect this as we train data very few times
+there is variance between train data and test data but we can tune it using grid search</p>
+<p>as I said earlier AdaBooster combines several models and give the final result and and these models are choosen with different sample tran data and after training one model we give errored data more weight in next bad(next model's train data) by doing so we will improve our perfomance when compared to other models but we need to make sure that no.of estimators/models must have some upper limit to reduce overfitting and even the prediction time is also less</p>
 
 </div>
 </div>
@@ -20394,9 +20460,11 @@ F1 score for test set: 0.7200.
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
 Ensemble Classifier is a way where we combine lot of models trained with random samples of train data to get better predictions when compared to individual predictions</p>
-<p>AdaBooster is a kind of ensemble classifier where we give more weight to the falsly predicted train data in previous model and this process continues may be 10 or 50 times</p>
-<p>by giving more weight to falsly predicted samples we are more focusing them and trying to get true predictions for those in the model</p>
-<p>In layman terms we are looking in to errors and giving more weight to errors in next model and train,fit on this data</p>
+<p>AdaBooster is a kind of ensemble classifier where we choose a regular classification model and  give more weight to the falsly predicted train data in previous model and this process continues may be 10 or 50 times</p>
+<p>here in our example I took decisonTreeClassification which is default model, so we no need to add a parameter
+by giving more weight to falsly predicted samples we are more focusing them and trying to get true predictions for those in the model</p>
+<p>In layman terms we are looking in to errors and giving more weight to errors in next model and train,fit on this data.</p>
+<p>to be brief, we are using DecisonTreeClassifier model (which is a tree decision - yes no, such as age) to classify our data and we are giving more weights to some data and get the more accuracy of predictions</p>
 <p>But we need to make sure that we use limited no.of estimators to reduce the overfitting . so AdaBooster when we tune with proper parameters gives good prediction score</p>
 
 </div>
